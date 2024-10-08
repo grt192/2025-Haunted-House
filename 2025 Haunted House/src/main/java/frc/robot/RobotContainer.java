@@ -22,12 +22,12 @@ public class RobotContainer {
   private final PneumaticsControlModule pcm1 = new PneumaticsControlModule(0);
   private final PneumaticsControlModule pcm2 = new PneumaticsControlModule(1);
   
-  private final SolenoidMech erinCreeperMech; 
+  private final SolenoidMech erinMech; 
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
     // Configure the trigger bindings
-    erinCreeperMech = new SolenoidMech(pcm1.makeSolenoid(0), 1, 3, 1);
+    erinMech = new SolenoidMech(pcm1.makeSolenoid(0), 1, 3, 1);
 
   }
 
