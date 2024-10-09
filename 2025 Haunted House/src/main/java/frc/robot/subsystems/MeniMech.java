@@ -29,7 +29,8 @@ public class MeniMech extends SubsystemBase {
   double headTimeUntilNextEvent = 0.0;
   boolean headUp = true;
   boolean handUp = true;
-  
+
+  @Override 
   public void periodic() {
     if(headTimer.advanceIfElapsed(headTimeUntilNextEvent)){
       headUp = !headUp;
