@@ -22,7 +22,7 @@ public class RobotContainer {
   // PCM1 is floor 1 of haunted house, PCM2 is floor 2
   private final PneumaticsControlModule pcm1 = new PneumaticsControlModule(0);
   private final PneumaticsControlModule pcm2 = new PneumaticsControlModule(1);
-  public static final int justinPort = 0;
+  public static final int justinPort = 2;
 
   //TOP LEFT WINDOW
   private final SolenoidMech justinMech = new SolenoidMech(pcm2.makeSolenoid(justinPort), 3, 7, 0.7);
