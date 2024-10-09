@@ -21,10 +21,10 @@ public class RobotContainer {
   // PCM1 is floor 1 of haunted house, PCM2 is floor 2
   private final PneumaticsControlModule pcm1 = new PneumaticsControlModule(0);
   private final PneumaticsControlModule pcm2 = new PneumaticsControlModule(1);
-  private final int satvikPort = 0;
+  private final int tanmayPort = 1;
 
   //Front Porch, using PCM1
-  private final SolenoidMech satvikMech = new SolenoidMech(pcm1.makeSolenoid(satvikPort), 5, 5);
+  private final SolenoidMech tanmayMech = new SolenoidMech(pcm1.makeSolenoid(tanmayPort), 5, 5);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
