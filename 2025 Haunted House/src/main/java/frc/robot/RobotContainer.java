@@ -26,7 +26,7 @@ public class RobotContainer {
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
-    kiessMech = new SolenoidMech(pcm2.makeSolenoid(1), 3, 5);
+    kiessMech = new SolenoidMech(pcm2.makeSolenoid(3), 3, 5);
   }
 
 
