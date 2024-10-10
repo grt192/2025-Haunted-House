@@ -16,9 +16,4 @@ public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
   }
-  public static class SolenoidPorts{
-    public static final int meni = 2;
-    public static final int hamza1 = 3;
-    public static final int hamza2 = 4;
-  }
 }
