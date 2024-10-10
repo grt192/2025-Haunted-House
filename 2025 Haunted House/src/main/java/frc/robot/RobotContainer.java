@@ -25,7 +25,7 @@ public class RobotContainer {
 
   //Left Bottom Window, using PCM1
   private final SolenoidMech meniMech = new SolenoidMech(
-    pcm1.makeSolenoid(SolenoidPorts.meni), 5, 20);
+    pcm1.makeSolenoid(2), 2, 5);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
