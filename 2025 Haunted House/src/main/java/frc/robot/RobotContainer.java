@@ -29,33 +29,31 @@ public class RobotContainer {
     public RobotContainer() {
         meniMech = new MeniMech(pcm1.makeSolenoid(3), pcm1.makeSolenoid(4));
 
-    }
-  private final PneumaticsControlModule pcm1 = new PneumaticsControlModule(0);
-  private final PneumaticsControlModule pcm2 = new PneumaticsControlModule(1);
-  public static final int justinPort = 2;
 
-  //TOP LEFT WINDOW
-  private final SolenoidMech justinMech = new SolenoidMech(pcm2.makeSolenoid(justinPort), 3, 7, 0.7);
+         final int justinPort = 2;
+
+        //TOP LEFT WINDOW
+         final SolenoidMech justinMech = new SolenoidMech(pcm2.makeSolenoid(justinPort), 3, 7, 0.7);
 
 
-  private final SolenoidMech kiessMech;
+         final SolenoidMech kiessMech;
 
-  /** The container for the robot. Contains subsystems, OI devices, and commands. */
-  public RobotContainer() {
-    kiessMech = new SolenoidMech(pcm2.makeSolenoid(3), 3, 5);
-  //Front Porch, using PCM1
-  // private final SolenoidMech tanmayMech = new SolenoidMech(pcm1.makeSolenoid(tanmayPort), 5, 5);
-  private final ErinandTanmayMech erinandtanmayMech; 
+        /** The container for the robot. Contains subsystems, OI devices, and commands. */
+        // public RobotContainer() {
+          kiessMech = new SolenoidMech(pcm2.makeSolenoid(3), 3, 5);
+        //Front Porch, using PCM1
+        // private final SolenoidMech tanmayMech = new SolenoidMech(pcm1.makeSolenoid(tanmayPort), 5, 5);
+         final ErinandTanmayMech erinandtanmayMech; 
 
-  private final SolenoidMech mishaspiderMech;
-  private final SolenoidMech mishalegMech;
-  /** The container for the robot. Contains subsystems, OI devices, and commands. */
-  public RobotContainer() {
-    mishaspiderMech = new SolenoidMech(pcm2.makeSolenoid(0), 3, 3, 1);
-    mishalegMech = new SolenoidMech(pcm2.makeSolenoid(1), 1, 1, 0.5);
-    // Configure the trigger bindings
+         final SolenoidMech mishaspiderMech;
+         final SolenoidMech mishalegMech;
+        // /** The container for the robot. Contains subsystems, OI devices, and commands. */
+        // public RobotContainer() {
+          mishaspiderMech = new SolenoidMech(pcm2.makeSolenoid(0), 3, 3, 1);
+          mishalegMech = new SolenoidMech(pcm2.makeSolenoid(1), 1, 1, 0.5);
+          // Configure the trigger bindings
 
-    erinandtanmayMech = new ErinandTanmayMech(pcm1.makeSolenoid(5), pcm1.makeSolenoid(1));
+          erinandtanmayMech = new ErinandTanmayMech(pcm1.makeSolenoid(5), pcm1.makeSolenoid(1));
   }
 
 
